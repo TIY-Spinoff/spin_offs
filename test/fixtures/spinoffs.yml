@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_name: MyString
+  parent_ticker: MyString
+  spinoff_name: MyString
+  spinoff_ticker: MyString
+  spinoff_date: MyString
+
+two:
+  parent_name: MyString
+  parent_ticker: MyString
+  spinoff_name: MyString
+  spinoff_ticker: MyString
+  spinoff_date: MyString
