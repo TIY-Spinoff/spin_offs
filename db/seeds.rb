@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'csv'
 Spinoff.delete_all
-csv_path = "/Users/andell/portfolio_projects/final_project/spin_offs/db/spinoff_data.csv"
+csv_path = "#{Rails.root}/db/spinoff_data.csv"
 
 CSV.foreach("#{csv_path}") do |row|
   next if row[1].blank? || row[1] == "parent_name"

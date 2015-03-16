@@ -1,3 +1,5 @@
+<%= render partial: "elements/navbar" %>
+<%= bootstrap_flash %>
 <div class="container">
   <h1>SpinoffNewsletter.com</h1>
   <p>Reminder, find this page: views/landings/index.html.erb</p>
@@ -5,8 +7,8 @@
     add a "Subscribe Now" button/form </p>
 
   <%= button_to "Subscribe", new_subscribe_path, :class => "button", :method => :get  %>
-
 </div>
+
 
 
 

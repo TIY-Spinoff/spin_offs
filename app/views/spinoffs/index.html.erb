@@ -1,0 +1,33 @@
+<%= render partial: "elements/navbar" %>
+<%= bootstrap_flash %>
+<div class="jumbotron">
+  <h1 style="text-align: center;">Welcome to Spin!</h1>
+</div>
+
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th><h3>Parent Name</h3></th>
+        <th><h3>Parent Ticker</h3></th>
+        <th><h3>Spinoff Name</h3></th>
+        <th><h3>Spinoff Ticker</h3></th>
+        <th><h3>Spinoff Date</h3></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @spinoffs.each do |spin| %>
+        <tr>
+          <td><%= spin.parent_name %></td>
+          <td><%= spin.parent_ticker %></td>   
+          <td><%= spin.spinoff_name %></td>
+          <td><%= spin.spinoff_ticker %></td>
+          <td><%= spin.spinoff_date %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+
+  
